@@ -335,6 +335,7 @@ export default class Day extends React.Component {
       aria-label={this.getAriaLabel()}
       role="button"
       aria-disabled={this.isDisabled()}
+      aria-selected={this.isSameDay(this.props.selected)}
     >
       {this.renderDayContents()}
     </div>
